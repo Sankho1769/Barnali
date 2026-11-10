@@ -1,0 +1,83 @@
+server:
+  port: ${API_PORT:8080}
+  servlet:
+    session:
+      timeout: 8h
+      cookie:
+        name: BARNALI_SESSION
+        http-only: true
+        secure: ${SESSION_COOKIE_SECURE:false}
+        same-site: lax
+        path: /
+
+spring:
+  application:
+    name: barnali-api
+  datasource:
+    url: ${DATABASE_URL:}
+    username: ${DATABASE_USERNAME:}
+    password: ${DATABASE_PASSWORD:}
+    hikari:
+      maximum-pool-size: ${DATABASE_POOL_SIZE:8}
+      connection-timeout: 5000
+      validation-timeout: 3000
+      schema: barnali
+      connection-init-sql: "SELECT set_config('statement_timeout', '5s', false), set_config('barnali.user_id', '', false)"
+  flyway:
+    # Schema changes run only through the isolated, explicitly approved migration command.
+    enabled: false
+    locations: classpath:db/migration
+    schemas:
+      - barnali
+    default-schema: barnali
+    validate-on-migrate: true
+    clean-disabled: true
+    create-schemas: false
+    baseline-on-migrate: false
+    # Deliberately has no runtime credential fallback. The migration entry point
+    # requires its own explicitly configured principal and password.
+    url: ${MIGRATION_DATABASE_URL:}
+    user: ${MIGRATION_DATABASE_USERNAME:}
+    password: ${MIGRATION_DATABASE_PASSWORD:}
+  mail:
+    host: ${SMTP_HOST:}
+    port: ${SMTP_PORT:587}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: ${SMTP_STARTTLS:true}
+      mail.smtp.connectiontimeout: 5000
+      mail.smtp.timeout: 5000
+      mail.smtp.writetimeout: 5000
+
+barnali:
+  environment: ${APP_ENV:prod}
+  expected-supabase-project-ref: ${BARNALI_EXPECTED_SUPABASE_PROJECT_REF:}
+  app-origin: ${APP_ORIGIN:http://localhost:3000}
+  api-origin: ${API_ORIGIN:http://localhost:8080}
+  owner-email: ${OWNER_EMAIL:}
+  owner-bootstrap-password: ${OWNER_BOOTSTRAP_PASSWORD:}
+  owner:
+    provisioner:
+      database-url: ${OWNER_PROVISIONER_DATABASE_URL:}
+      database-username: ${OWNER_PROVISIONER_DATABASE_USERNAME:}
+      database-password: ${OWNER_PROVISIONER_DATABASE_PASSWORD:}
+  security-hmac-key: ${APP_SECURITY_HMAC_KEY:}
+  mail-from: ${SMTP_FROM:}
+  invitation-base-url: ${APP_ORIGIN:http://localhost:3000}/admin/accept-invitation
+  password-reset-base-url: ${APP_ORIGIN:http://localhost:3000}/reset-password
+
+logging:
+  level:
+    root: INFO
+    com.barnali.api: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never

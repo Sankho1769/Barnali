@@ -1,0 +1,3 @@
+# Flyway migrations
+
+Versioned PostgreSQL schema changes are not applied at ordinary API startup. They run only through the separately approved, isolated migration command after read-only preflight. Current migrations are V1 (community/auth/admin schema) and V2 (rate-limit audit throttle and pending-report guard). Both migrations create tables without RLS policies; because the Supabase event trigger enables RLS, a runtime role without `BYPASSRLS` cannot use those tables until a reviewed policy migration and trusted request-identity design are implemented. Review and test new migrations on a disposable/staging database before deployment; never rewrite an applied migration. Migration execution is not verified in this workspace.

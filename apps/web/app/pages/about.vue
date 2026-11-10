@@ -1,0 +1,5 @@
+<script setup lang="ts">
+useSeoMeta({title:'About BARNALI',description:'A community for curious minds to learn, share, and grow together.'})
+</script>
+<template><article class="surface surface-pad about-page"><span class="eyebrow">Ideas · People · Perspectives · Together</span><h1 class="serif-title">Knowledge grows when people talk.</h1><p>BARNALI is a community built around thoughtful questions, lived experience, and the belief that different perspectives help us understand more.</p><p>Join a room that interests you, start a discussion, and share what you have learned. Keep conversations kind, clear, and open to correction.</p><div class="about-actions"><NuxtLink class="btn" to="/rooms">Explore rooms</NuxtLink><NuxtLink class="btn btn--outline" to="/community-guidelines">Community guidelines</NuxtLink></div></article></template>
+<style scoped>.about-page{padding:clamp(20px,4vw,42px)}.about-page h1{max-width:720px;margin:12px 0 16px;font-size:clamp(2rem,5vw,3.3rem);line-height:1.1}.about-page p{max-width:720px;color:#49564f;line-height:1.75;font-size:1.02rem}.about-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}</style>

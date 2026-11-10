@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+apps/web/.nuxt/
+apps/web/.output/
+apps/web/dist/
+apps/api/target/
+*.log
+.DS_Store
+Thumbs.db

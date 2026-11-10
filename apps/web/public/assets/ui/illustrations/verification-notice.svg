@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" role="img" aria-label="Verification notice illustration">
+ <rect x="22" y="20" width="276" height="120" rx="16" fill="#FFF3D8"/>
+ <path d="M66 47 94 98H38Z" fill="#E65336"/>
+ <path d="M66 63v16M66 87v1" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+ <rect x="116" y="49" width="142" height="9" rx="4.5" fill="#17221D" opacity=".85"/>
+ <rect x="116" y="69" width="112" height="6" rx="3" fill="#68736B" opacity=".75"/>
+ <rect x="116" y="84" width="128" height="6" rx="3" fill="#68736B" opacity=".75"/>
+ <rect x="116" y="106" width="90" height="18" rx="9" fill="#00AEBB"/>
+</svg>

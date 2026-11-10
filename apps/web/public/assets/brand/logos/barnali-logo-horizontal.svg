@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 130" role="img" aria-labelledby="title desc">
+  <title id="title">BARNALI</title><desc id="desc">Botanical sprout symbol and BARNALI wordmark</desc>
+  <g fill="#073B2A">
+    <path d="M48 91 C14 75 8 44 13 15 C43 16 72 29 81 57 C89 32 111 12 143 8 C145 42 130 75 93 91 L91 112 L80 112 L80 92 C69 83 58 70 48 53 C43 45 35 38 26 32 C35 48 44 66 58 79 Z"/>
+    <path d="M82 91 C84 66 91 45 112 26 C96 52 89 72 91 91 Z" fill="#F9F5EA"/>
+  </g>
+  <text x="168" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="66" letter-spacing="5" font-weight="bold" fill="#073B2A">BARNALI</text>
+</svg>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BARNALI | Responsive Dashboard Concept</title>
+<link rel="stylesheet" href="../design-system/barnali.css">
+<style>
+.top { display:flex; align-items:center; gap:24px; padding:14px 24px; background:#fff; border-bottom:1px solid var(--b-border); }
+.brand { color:var(--b-forest); font:700 1.7rem var(--b-font-display); letter-spacing:.1em; }
+.search { margin-left:auto; min-width:180px; max-width:440px; width:35%; padding:11px 14px; border:1px solid var(--b-border); border-radius:999px; }
+.side, .right { display:grid; align-content:start; gap:12px; }
+.navitem { padding:11px 12px; border-radius:10px; color:var(--b-ink); }
+.navitem.active { background:var(--b-sage); color:var(--b-forest); font-weight:700; }
+.panel { padding:18px; }
+.post-title { font:700 1.4rem/1.25 var(--b-font-display); margin:.3rem 0; }
+.pill { display:inline-block; background:var(--b-pale-teal); color:var(--b-teal-dark); padding:5px 9px; border-radius:999px; font-size:.8rem; }
+.warn { background:var(--b-warning-bg, #FFF3D8); border:1px solid #F0D59A; padding:12px; border-radius:12px; margin:12px 0; }
+@media(max-width:639px) { .top { padding:12px; } .top .navlinks { display:none; } .search { width:auto; flex:1; } .post-title {font-size:1.15rem} }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">🌿 BARNALI</div>
+  <nav class="navlinks">Home &nbsp;&nbsp; Rooms &nbsp;&nbsp; Discussions &nbsp;&nbsp; Discover</nav>
+  <input class="search" aria-label="Search" placeholder="Search discussions, rooms or people">
+</header>
+<div class="b-layout">
+  <aside class="side b-layout__left">
+    <div class="navitem active">⌂ &nbsp; Home</div><div class="navitem">◎ &nbsp; Explore</div><div class="navitem">▢ &nbsp; Messages</div><div class="navitem">♧ &nbsp; Saved posts</div><div class="navitem">⚙ &nbsp; Settings</div>
+  </aside>
+  <main style="display:grid;align-content:start;gap:16px;min-width:0">
+    <section class="b-card panel">
+      <strong>Start a discussion</strong>
+      <p class="b-muted">Ask a question or share an idea with the community.</p>
+      <button class="b-button">＋ Create post</button>
+    </section>
+    <section class="b-card panel">
+      <div class="b-muted">Riya Sharma · 2 hours ago · Career &amp; Placements</div>
+      <h1 class="post-title">Is a degree still important for a career in tech?</h1>
+      <p>Share your experience and help others make an informed decision. Thoughtful answers are more useful than quick takes.</p>
+      <div class="warn"><strong>⚠ Needs verification</strong><p>Some claims may benefit from reliable sources. Check the evidence before sharing as fact.</p><a class="b-link" href="#">View sources ↗</a></div>
+      <div class="b-muted">↑ 42 votes &nbsp; · &nbsp; 28 replies &nbsp; · &nbsp; Save</div>
+    </section>
+  </main>
+  <aside class="right b-layout__right">
+    <section class="b-card panel"><strong>Trending news</strong><p class="b-muted">News and topics gaining attention.</p><span class="pill">AI &amp; education</span></section>
+    <section class="b-card panel"><strong>Popular rooms</strong><p>Programming</p><p>Career &amp; Placements</p><p>College Life</p></section>
+    <section class="b-card panel"><strong>People you may know</strong><p class="b-muted">Find people with shared interests.</p></section>
+  </aside>
+</div>
+</body></html>

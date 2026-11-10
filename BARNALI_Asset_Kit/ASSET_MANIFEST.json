@@ -1,0 +1,230 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 2127
+  },
+  {
+    "path": "brand/launch/README.md",
+    "bytes": 360
+  },
+  {
+    "path": "brand/logos/barnali-logo-dark-background.svg",
+    "bytes": 565
+  },
+  {
+    "path": "brand/logos/barnali-logo-horizontal.svg",
+    "bytes": 657
+  },
+  {
+    "path": "brand/logos/barnali-logo-stacked.svg",
+    "bytes": 1027
+  },
+  {
+    "path": "brand/logos/barnali-mark-dark.svg",
+    "bytes": 496
+  },
+  {
+    "path": "brand/logos/barnali-mark-transparent.svg",
+    "bytes": 433
+  },
+  {
+    "path": "brand/logos/barnali-mark.svg",
+    "bytes": 497
+  },
+  {
+    "path": "brand/logos/barnali-wordmark.svg",
+    "bytes": 312
+  },
+  {
+    "path": "brand/logos/favicon.svg",
+    "bytes": 497
+  },
+  {
+    "path": "brand/social/barnali-social-card.svg",
+    "bytes": 1068
+  },
+  {
+    "path": "design-system/barnali.css",
+    "bytes": 1985
+  },
+  {
+    "path": "design-system/themes/dark.css",
+    "bytes": 617
+  },
+  {
+    "path": "design-system/themes/light.css",
+    "bytes": 599
+  },
+  {
+    "path": "design-system/tokens/barnali.tokens.json",
+    "bytes": 2043
+  },
+  {
+    "path": "design-system/tokens.json",
+    "bytes": 1103
+  },
+  {
+    "path": "docs/ACCESSIBILITY_CHECKLIST.md",
+    "bytes": 677
+  },
+  {
+    "path": "docs/ASSET_CATALOG.md",
+    "bytes": 1409
+  },
+  {
+    "path": "docs/FILE_NAMING.md",
+    "bytes": 549
+  },
+  {
+    "path": "docs/INTEGRATION_GUIDE.md",
+    "bytes": 1695
+  },
+  {
+    "path": "docs/RELEASE_CHECKLIST.md",
+    "bytes": 639
+  },
+  {
+    "path": "frontend-vue/src/components/BarnaliBrand.vue",
+    "bytes": 1582
+  },
+  {
+    "path": "frontend-vue/src/styles/main.css",
+    "bytes": 697
+  },
+  {
+    "path": "screens/responsive-dashboard-preview.html",
+    "bytes": 3469
+  },
+  {
+    "path": "ui/avatars/avatar-placeholder.svg",
+    "bytes": 284
+  },
+  {
+    "path": "ui/badges/community-moderator.svg",
+    "bytes": 333
+  },
+  {
+    "path": "ui/badges/needs-verification.svg",
+    "bytes": 351
+  },
+  {
+    "path": "ui/badges/new-member.svg",
+    "bytes": 335
+  },
+  {
+    "path": "ui/badges/popular-room.svg",
+    "bytes": 339
+  },
+  {
+    "path": "ui/badges/verified-source.svg",
+    "bytes": 341
+  },
+  {
+    "path": "ui/icons/alert-triangle.svg",
+    "bytes": 315
+  },
+  {
+    "path": "ui/icons/arrow-up.svg",
+    "bytes": 228
+  },
+  {
+    "path": "ui/icons/bell.svg",
+    "bytes": 270
+  },
+  {
+    "path": "ui/icons/bookmark.svg",
+    "bytes": 227
+  },
+  {
+    "path": "ui/icons/check-circle.svg",
+    "bytes": 260
+  },
+  {
+    "path": "ui/icons/close.svg",
+    "bytes": 225
+  },
+  {
+    "path": "ui/icons/compass.svg",
+    "bytes": 269
+  },
+  {
+    "path": "ui/icons/external-link.svg",
+    "bytes": 300
+  },
+  {
+    "path": "ui/icons/eye-off.svg",
+    "bytes": 381
+  },
+  {
+    "path": "ui/icons/eye.svg",
+    "bytes": 281
+  },
+  {
+    "path": "ui/icons/flag.svg",
+    "bytes": 257
+  },
+  {
+    "path": "ui/icons/home.svg",
+    "bytes": 264
+  },
+  {
+    "path": "ui/icons/link.svg",
+    "bytes": 321
+  },
+  {
+    "path": "ui/icons/lock.svg",
+    "bytes": 276
+  },
+  {
+    "path": "ui/icons/mail.svg",
+    "bytes": 264
+  },
+  {
+    "path": "ui/icons/menu.svg",
+    "bytes": 226
+  },
+  {
+    "path": "ui/icons/message-circle.svg",
+    "bytes": 331
+  },
+  {
+    "path": "ui/icons/messages.svg",
+    "bytes": 350
+  },
+  {
+    "path": "ui/icons/more-horizontal.svg",
+    "bytes": 294
+  },
+  {
+    "path": "ui/icons/plus.svg",
+    "bytes": 219
+  },
+  {
+    "path": "ui/icons/search.svg",
+    "bytes": 250
+  },
+  {
+    "path": "ui/icons/send.svg",
+    "bytes": 245
+  },
+  {
+    "path": "ui/icons/settings.svg",
+    "bytes": 477
+  },
+  {
+    "path": "ui/icons/shield-check.svg",
+    "bytes": 279
+  },
+  {
+    "path": "ui/icons/users.svg",
+    "bytes": 335
+  },
+  {
+    "path": "ui/illustrations/empty-discussions.svg",
+    "bytes": 895
+  },
+  {
+    "path": "ui/illustrations/verification-notice.svg",
+    "bytes": 652
+  }
+]
